@@ -30,8 +30,9 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  wedding_name: "Jack & Jill's Wedding"
-  wedding_couple_names: 'Jack & Jill'
-  wedding_date: 'Saturday, 1 January 2000'
-  wedding_location: 'South Pole'
+  wedding_name: "Dirk & Stefanie's Wedding"
+  wedding_couple_name1: 'Dirk'
+  wedding_couple_name2: 'Stefanie'
+  wedding_date: '26-28 juli 2021'
+  wedding_location: 'Homps, Zuid Frankrijk'
   photo_credits: 'Photo Credits: Pexels'

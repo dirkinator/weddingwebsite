@@ -11,10 +11,15 @@
  * It is generally better to create a new file per style scope.
  *
  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Arvo:400');
+@font-face {
+  font-family: 'realkindly';
+  src: url('/../fonts/RealKindly.ttf')
+}
 
-$font-family-sans-serif: Montserrat, Helvetica, Arial, sans-serif;
+
+$font-family-sans-serif: Roboto, Helvetica, Arial, sans-serif;
 $font-family-serif: Arvo, Georgia, "Times New Roman", Times, serif;
 
 $font-family-base: $font-family-serif;
@@ -24,7 +29,8 @@ $body-color: rgba(28, 13, 10, 0.7);
 $headings-color: rgba(28, 13, 10, 0.7);
 
 $theme-colors: (
-  "primary": #ff745c
+        "primary": #C39329,
+        "secondary": #4D7656
 );
 
 $enable-rounded: false;
@@ -34,10 +40,15 @@ $enable-rounded: false;
 @import "welcome";
 
 h1 {
-  font-size: 60px;
+  font-size: 7rem;
   font-weight: 700;
   letter-spacing: 0.0833333em;
-  text-transform: uppercase;
+  font-family: "Real Kindly", sans-serif;
+  .crazyhearts {
+    font-family: "Crazy Hearts", sans-serif;
+    color: theme-color("secondary");
+    font-size:69px;
+  }
 }
 
 h2 {
@@ -49,14 +60,20 @@ h2 {
   text-transform: uppercase;
 
   svg {
-    fill: currentColor;
-    margin: 0 auto;
-    height: 100px;
+    fill: theme-color("secondary");
+    margin: 20px auto;
+    height: 50px;
   }
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
 .wedding-cta-btn {
-  letter-spacing: 2px;
+  font-weight: 300;
+  font-size: 1.3rem;
   padding: 0.75rem 1.5rem;
 }
 

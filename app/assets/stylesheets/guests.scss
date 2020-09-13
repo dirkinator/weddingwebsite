@@ -3,8 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #guests-leader {
-  background: linear-gradient(rgba(28, 13, 10, 0.4), rgba(28, 13, 10, 0.6)),
-    image-url("rsvp.jpg") center center no-repeat;
+  background: linear-gradient(rgba(28, 13, 10, 0.25), rgba(28, 13, 10, 0.4)),
+    image-url("rsvp.jpeg") center center no-repeat;
   background-size: cover;
 
   h1 {
@@ -25,4 +25,8 @@
 .guests-buttons {
   padding-top: $spacer;
   padding-bottom: 10 * $spacer;
+}
+
+.slightly-larger{
+  font-size: 1.5rem;
 }

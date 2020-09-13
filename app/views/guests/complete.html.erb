@@ -1,12 +1,13 @@
 <div class="container">
   <div class="row">
-    <div class="offset-lg-2 col-lg-8">
+    <div class="col-md-12">
       <%= render partial: 'leader' %>
-      <h2>Thanks!</h2>
-      <p>We've sent an email confirmation to <tt><%= @guest.email %></tt>.</p>
-      <p>If you don't receive the email within a few minutes, please check your spam folder, and if it's not there <%= mail_to ENV['CONTACT_EMAIL'], 'contact us' %>.</p>
-      <p>The email contains a link that you can use to update your RSVP later if you need to.</p>
-      <p><%= link_to 'Back to the Home Page', root_path %></p>
+      <h2>Bedankt!!</h2>
+      <p>We hebben je een mail gestuurd naar <%= @guest.email %>.</p>
+      <p>Als de mail er niet binnen een paar minuten is, check dan even je spambox. Ook niet daar? Stuur ons dan even
+        een berichtje.</p>
+      <p>De mail bevat een linkje die je later kan gebruiken om je RSVP aan te passen.</p>
+      <p><%= link_to 'Terug naar de Home pagina', root_path %></p>
     </div>
   </div>
 </div>
