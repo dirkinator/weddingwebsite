@@ -3,7 +3,6 @@
 Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  default_url_options :host => "www.dirkenstefaniegaantrouwen.herokuapp.com"
 
   get 'welcome/index'
 
