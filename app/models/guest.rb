@@ -29,7 +29,7 @@ class Guest < ApplicationRecord
     return 'Hello,' if
       first_name.blank? || first_name !~ /\A[\p{Word}\s'-]{1,30}\z/i
 
-    "Dear #{first_name},"
+    "Lieve #{first_name},"
   end
 
   validates :diet, length: { maximum: 8192 }

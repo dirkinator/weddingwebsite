@@ -1,11 +1,11 @@
 <p><%= @guest.email_safe_salutation %></p>
 
-<p>You recently entered your email address to RSVP on <%= ENV['CANONICAL_HOST'] %>.</p>
+<p>Je hebt je onlangs aangemeld op onze website met dit e-mailadres.</p>
 
-<p>If you would like to view or update your RSVP, you can use the following link to get back to it:</p>
-<p><%= link_to guest_url(@guest), guest_url(@guest) %></p>
+<p>Als je je RSVP wil wijzigen kan dat via <%= link_to guest_url(@guest) do %> deze link<% end %>.
 
-<p>If you have any questions, you can ask us by reply.</p>
 
-<p>&nbsp;</p>
-<p><%= t :wedding_couple_names %></p>
+<p>Als je vragen hebt kan dat door dit mailtje te beantwoorden.</p>
+
+<p>Liefs, <br/>
+<p>Dirk en Stefanie</p>
