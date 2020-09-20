@@ -3,13 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 @font-face {
-  font-family: 'realkindly';
-  src: url('/../fonts/RealKindly.ttf')
+  font-family: 'Real Kindly';
+  src: url('/RealKindly.ttf')
 }
 
 @font-face {
-  font-family: 'crazyhearts';
-  src: url('/../fonts/CrazyHearts.otf')
+  font-family: 'Crazy Hearts';
+  src: url('/CrazyHearts.otf');
 }
 
 #welcome-index-leader {
@@ -26,11 +26,12 @@
     font-family: "Real Kindly", sans-serif;
     text-transform: capitalize;
     margin-top: 100px;
-    font-size:100px;
+    font-size: 100px;
+
     .crazyhearts {
       font-family: "Crazy Hearts", sans-serif;
       color: theme-color("primary");
-      font-size:69px;
+      font-size: 69px;
     }
   }
 
@@ -46,6 +47,7 @@
   h1 {
     padding: 3 * $spacer 0;
   }
+
   a {
     color: theme-color("secondary");
     text-decoration: underline;
@@ -74,6 +76,14 @@
     text-align: center;
   }
 
+  svg {
+    fill: theme-color("primary");
+  }
+
+  h3 {
+    color: theme-color("primary");
+  }
+
   p {
     text-align: justify;
   }
@@ -96,6 +106,7 @@
 
 #welcome-index-wedding-plan {
   h2 {
+    color: theme-color("secondary");
     padding-top: 3 * $spacer;
     padding-bottom: $spacer;
     text-align: center;
@@ -108,7 +119,7 @@
 
 #welcome-index-footer {
   background: linear-gradient(rgba(28, 13, 10, 0.4), rgba(28, 13, 10, 0.6)),
-  image-url("dirkensteef.JPG") center center no-repeat;
+  image-url("dirkensteefwijn.jpeg") center center no-repeat;
   background-size: cover;
   margin-top: 5 * $spacer;
 
@@ -127,6 +138,28 @@
   }
 }
 
-.explained{
-  min-height: 125px;
+@media screen and (min-width: 993px) {
+  .explained {
+    min-height: 125px;
+  }
+}
+
+.primary {
+  color: theme-color("primary");
+}
+
+.secondary {
+  color: theme-color("secondary");
+}
+
+#questions-leader {
+  background: linear-gradient(rgba(28, 13, 10, 0.4), rgba(28, 13, 10, 0.6)),
+  image-url("vragen.jpg") center center no-repeat;
+  background-size: cover;
+  margin-top: 5 * $spacer;
+
+  * {
+    color: rgba(255, 255, 255, 0.95);
+  }
+
 }
