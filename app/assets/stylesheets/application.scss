@@ -44,10 +44,14 @@ h1 {
   font-weight: 700;
   letter-spacing: 0.0833333em;
   font-family: "Real Kindly", sans-serif;
+  @media (max-width: 768px) {
+    font-size: 5rem;
+  }
+
   .crazyhearts {
     font-family: "Crazy Hearts", sans-serif;
     color: theme-color("secondary");
-    font-size:69px;
+    font-size: 69px;
   }
 }
 
@@ -63,6 +67,9 @@ h2 {
     fill: theme-color("secondary");
     margin: 20px auto;
     height: 50px;
+    @media (max-width: 768px) {
+      height: 35px;
+    }
   }
 }
 
