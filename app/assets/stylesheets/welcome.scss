@@ -125,6 +125,10 @@
 }
 
 #welcome-index-wedding-plan {
+  i {
+    font-size: 20px;
+  }
+
   h2 {
     color: theme-color("secondary");
     padding-top: 3 * $spacer;
@@ -181,4 +185,9 @@
   * {
     color: rgba(255, 255, 255, 0.95);
   }
+
+  h1 {
+    padding: 3 * $spacer 0;
+  }
+
 }
