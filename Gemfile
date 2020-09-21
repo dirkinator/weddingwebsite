@@ -33,6 +33,8 @@ gem 'rack-canonical-host'
 gem 'recaptcha', require: 'recaptcha/rails'
 gem 'scenic'
 
+gem 'rack-www'
+
 group :development, :test do
   gem 'rubocop'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
