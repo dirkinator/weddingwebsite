@@ -107,5 +107,4 @@ Rails.application.configure do
 
   # heroku settings
   config.middleware.use Rack::WWW, :www => true
-  config.force_ssl = true
 end
