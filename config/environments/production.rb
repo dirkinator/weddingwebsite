@@ -106,5 +106,5 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # heroku settings
-  config.middleware.use Rack::WWW, :www => true
+  config.force_ssl = true
 end
