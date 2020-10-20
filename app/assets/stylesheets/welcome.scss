@@ -74,9 +74,54 @@
 }
 
 
-#welcome-index-venue-leader {
+#welcome-index-venue-leader1 {
   background: linear-gradient(rgba(28, 13, 10, 0.4), rgba(28, 13, 10, 0.6)),
   image-url("puissentut2.png") center center no-repeat;
+  background-size: cover;
+  margin-top: 5 * $spacer;
+
+  * {
+    color: rgba(255, 255, 255, 0.95);
+  }
+
+  h1 {
+    padding: 3 * $spacer 0;
+  }
+}
+
+#welcome-index-venue-leader2 {
+  background: linear-gradient(rgba(28, 13, 10, 0.4), rgba(28, 13, 10, 0.6)),
+  image-url("puissentut.jpg") center center no-repeat;
+  background-size: cover;
+  margin-top: 5 * $spacer;
+
+  * {
+    color: rgba(255, 255, 255, 0.95);
+  }
+
+  h1 {
+    padding: 3 * $spacer 0;
+  }
+}
+
+#welcome-index-venue-leader3 {
+  background: linear-gradient(rgba(28, 13, 10, 0.4), rgba(28, 13, 10, 0.6)),
+  image-url("puissentut3.jpg") center center no-repeat;
+  background-size: cover;
+  margin-top: 5 * $spacer;
+
+  * {
+    color: rgba(255, 255, 255, 0.95);
+  }
+
+  h1 {
+    padding: 3 * $spacer 0;
+  }
+}
+
+#welcome-index-venue-leader4 {
+  background: linear-gradient(rgba(28, 13, 10, 0.4), rgba(28, 13, 10, 0.6)),
+  image-url("puissentut4.jpg") center center no-repeat;
   background-size: cover;
   margin-top: 5 * $spacer;
 
@@ -94,14 +139,15 @@
     padding-top: 3 * $spacer;
     padding-bottom: $spacer;
     text-align: center;
+    color: theme-color("secondary");
   }
 
   svg {
-    fill: theme-color("primary");
+    fill: theme-color("secondary");
   }
 
   h3 {
-    color: theme-color("primary");
+    color: theme-color("secondary");
   }
 
   p {
@@ -181,6 +227,10 @@
   image-url("vragen.jpg") center center no-repeat;
   background-size: cover;
   margin-top: 5 * $spacer;
+
+  a {
+    color: theme-color("secondary");
+  }
 
   * {
     color: rgba(255, 255, 255, 0.95);
