@@ -43,7 +43,7 @@ class PlusOnesController < ApplicationController
   def destroy
     respond_to :html
     @plus_one = @guest.plus_ones.find_by(id: params[:id])
-    @plus_one&.destroy
+    @plus_one.destroy
     redirect_to guest_plus_ones_path(@guest)
   end
 

@@ -27,7 +27,7 @@
 
       <div class="form-group row">
         <div class="offset-md-3 col-md-9">
-          <p><strong>Ben je erbij?</strong></p>
+          <p><strong>Ben je erbij?</strong> <i> (19-07-22)</i></p>
           <div class="form-check form-check-inline">
             <%= form.radio_button :attending, 'true', checked: true, id: 'guest_attending_true', class: 'form-check-input' %>
             <%= form.label :attending, 'Ja', value: 'true', class: 'form-check-label' %>
@@ -37,7 +37,33 @@
             <%= form.label :attending, 'Nee', value: 'false', class: 'form-check-label' %>
           </div>
         </div>
+
+        <div class="offset-md-3 col-md-9"><p></p></div>
+        <div class="offset-md-3 col-md-4">
+          <p><strong>Ben je bij de welkomstborrel?</strong><i> (18-07-22)</i></p>
+          <div class="form-check form-check-inline">
+            <%= form.radio_button :first_day, 'true', checked: true, id: 'guest_first_day_true', class: 'form-check-input' %>
+            <%= form.label :first_day, 'Ja', value: 'true', class: 'form-check-label' %>
+          </div>
+          <div class="form-check form-check-inline">
+            <%= form.radio_button :first_day, 'false', id: 'guest_first_day_true', class: 'form-check-input' %>
+            <%= form.label :first_day, 'Nee', value: 'false', class: 'form-check-label' %>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <p><strong>Ben je bij de poolparty?</strong><i> (20-07-22)</i></p>
+          <div class="form-check form-check-inline">
+            <%= form.radio_button :poolparty, 'true', checked: true, id: 'guest_poolparty_true', class: 'form-check-input' %>
+            <%= form.label :poolparty, 'Ja', value: 'true', class: 'form-check-label' %>
+          </div>
+          <div class="form-check form-check-inline">
+            <%= form.radio_button :poolparty, 'false', id: 'guest_poolparty_true', class: 'form-check-input' %>
+            <%= form.label :poolparty, 'Nee', value: 'false', class: 'form-check-label' %>
+          </div>
+        </div>
       </div>
+
 
       <div class="guest-attending-only">
       <%= render partial: 'dietary_preferences', locals: { form: form, id_stem: 'guest' } %>

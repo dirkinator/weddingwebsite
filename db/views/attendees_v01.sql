@@ -1,7 +1,7 @@
 SELECT
   id::text,
   first_name, last_name, email,
-  diet, songs, notes, NULL as child,
+  diet, songs, notes, first_day, poolparty, NULL as child,
   updated_at
 FROM guests
 WHERE attending

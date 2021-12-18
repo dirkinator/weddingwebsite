@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_04_103058) do
+ActiveRecord::Schema.define(version: 2021_12_17_084911) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "citext"
@@ -59,6 +59,8 @@ ActiveRecord::Schema.define(version: 2018_08_04_103058) do
     t.string "first_name"
     t.string "last_name"
     t.datetime "confirmed_at"
+    t.boolean "first_day"
+    t.boolean "poolparty"
     t.index ["email"], name: "index_guests_on_email", unique: true
   end
 
@@ -75,7 +77,7 @@ ActiveRecord::Schema.define(version: 2018_08_04_103058) do
 
   add_foreign_key "plus_ones", "guests"
 
-  create_view "attendees",  sql_definition: <<-SQL
+  create_view "attendees", sql_definition: <<-SQL
       SELECT (guests.id)::text AS id,
       guests.first_name,
       guests.last_name,
@@ -101,5 +103,4 @@ ActiveRecord::Schema.define(version: 2018_08_04_103058) do
        JOIN guests ON ((plus_ones.guest_id = guests.id)))
     WHERE guests.attending;
   SQL
-
 end

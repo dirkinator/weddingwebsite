@@ -2,96 +2,114 @@
   <div class="row">
     <div class="col-md-12">
       <%= render partial: 'leader' %>
-      <%= render partial: 'rsvp_nav', locals: { active: 3 } %>
+      <%= render partial: 'rsvp_nav', locals: {active: 3} %>
 
       <h2>Bevestig</h2>
 
       <%= form_with(model: @guest, url: complete_guest_path(@guest), local: true) do |form| %>
-      <div class="row">
-        <div class="col-md-12">
-          <%= errors_for(@guest) %>
-        </div>
-      </div>
-
-      <% if @guest.attending? %>
-      <h3>Jouw gegevens</h3>
-      <div class="card mb-3">
-        <h5 class="card-header"><%= @guest.name %></h5>
-        <div class="card-body">
-          <div class="row">
-            <div class="col-md-4">
-              Email
-            </div>
-            <div class="col-md-8">
-              <p><pre><%= @guest.email %></pre></p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4">
-              Dieet wensen
-            </div>
-            <div class="col-md-8">
-              <% if @guest.diet.present? %>
-                <pre><%= @guest.diet %></pre>
-              <% else %>
-                <pre>Geen wensen</pre>
-              <% end %>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4">
-              Muziek suggesties
-            </div>
-            <div class="col-md-8">
-              <% if @guest.songs.present? %>
-                <pre><%= @guest.songs %></pre>
-              <% else %>
-                <pre>Geen suggesties</pre>
-              <% end %>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 text-right">
-              <%= link_to 'Pas aan', guest_path(@guest), class: 'card-link', data: { disable_with: 'Loading...' } %>
-            </div>
+        <div class="row">
+          <div class="col-md-12">
+            <%= errors_for(@guest) %>
           </div>
         </div>
-      </div>
 
-      <h3>Andere gasten</h3>
-      <% if @guest.plus_ones.any? %>
-        <%= render @guest.plus_ones %>
-      <% else %>
-        <p class="slightly-larger">Flying solo</p>
-      <% end %>
-      <% else %>
-      <p class="slightly-larger">Jammer dat je niet komt!</p>
-      <h3>Jouw gegevens</h3>
-      <div class="card mb-3">
-        <h5 class="card-header"><%= @guest.name %></h5>
-        <div class="card-body">
-          <div class="row">
-            <div class="col-md-4">
-              Email
-            </div>
-            <div class="col-md-8">
-              <p><tt><%= @guest.email %></tt></p>
+        <% if @guest.attending? %>
+          <h3>Jouw gegevens</h3>
+          <div class="card mb-3">
+            <h5 class="card-header"><%= @guest.name %></h5>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-4">
+                  Email
+                </div>
+                <div class="col-md-8">
+                  <p>
+                  <pre><%= @guest.email %></pre>
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  Dieet wensen
+                </div>
+                <div class="col-md-8">
+                  <% if @guest.diet.present? %>
+                    <pre><%= @guest.diet %></pre>
+                  <% else %>
+                    <pre>Geen wensen</pre>
+                  <% end %>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  Muziek suggesties
+                </div>
+                <div class="col-md-8">
+                  <% if @guest.songs.present? %>
+                    <pre><%= @guest.songs %></pre>
+                  <% else %>
+                    <pre>Geen suggesties</pre>
+                  <% end %>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  Eerste dag erbij?
+                </div>
+                <div class="col-md-8">
+                  <%= @guest.first_day %>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  Poolparty erbij?
+                </div>
+                <div class="col-md-8">
+                  <%= @guest.poolparty %>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 text-right">
+                  <%= link_to 'Pas aan', guest_path(@guest), class: 'card-link', data: {disable_with: 'Loading...'} %>
+                </div>
+              </div>
             </div>
           </div>
+
+          <h3>Andere gasten</h3>
+          <% if @guest.plus_ones.any? %>
+            <%= render @guest.plus_ones %>
+          <% else %>
+            <p class="slightly-larger">Flying solo</p>
+          <% end %>
+        <% else %>
+          <p class="slightly-larger">Jammer dat je niet komt!</p>
+          <h3>Jouw gegevens</h3>
+          <div class="card mb-3">
+            <h5 class="card-header"><%= @guest.name %></h5>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-4">
+                  Email
+                </div>
+                <div class="col-md-8">
+                  <p><tt><%= @guest.email %></tt></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <% end %>
+
+        <h3>Wil je nog wat kwijt?</h3>
+
+        <%= form.text_area :notes, class: 'form-control' %>
+        <small class="form-text text-muted">Is er nog iets wat je graag aan ons kwijt wil?</small>
+
+        <div class="row guests-buttons">
+          <div class="offset-md-3 col-md-6 text-center">
+            <%= form.submit 'Bevestig jouw RSVP', class: 'btn btn-primary', data: {disable_with: 'Sending...'} %>
+          </div>
         </div>
-      </div>
-      <% end %>
-
-      <h3>Wil je nog wat kwijt?</h3>
-
-      <%= form.text_area :notes, class: 'form-control' %>
-      <small class="form-text text-muted">Is er nog iets wat je graag aan ons kwijt wil?</small>
-
-      <div class="row guests-buttons">
-        <div class="offset-md-3 col-md-6 text-center">
-          <%= form.submit 'Bevestig jouw RSVP', class: 'btn btn-primary', data: { disable_with: 'Sending...' } %>
-        </div>
-      </div>
       <% end %>
     </div>
   </div>

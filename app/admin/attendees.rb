@@ -18,6 +18,8 @@ ActiveAdmin.register Attendee do
     column :notes
     column :child
     column :updated_at
+    column :first_day
+    column :poolparty
   end
 
   config.batch_actions = false

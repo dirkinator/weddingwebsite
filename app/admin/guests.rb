@@ -2,7 +2,7 @@
 
 ActiveAdmin.register Guest do
   permit_params :email, :first_name, :last_name, :attending, :diet, :songs,
-                :notes
+                :notes, :first_day, :poolparty
 
   scope :confirmed
   scope :attending
@@ -14,6 +14,8 @@ ActiveAdmin.register Guest do
       input :first_name
       input :last_name
       input :attending
+      input :first_day
+      input :poolparty
       input :diet, as: :text
       input :songs, as: :text
       input :notes, as: :text
