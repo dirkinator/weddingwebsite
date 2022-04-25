@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="949a7cbd-692f-4343-b6a2-c48728355ce2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/welcome/_plan.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/welcome/_plan.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/welcome/_questions.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/welcome/_questions.html.erb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -39,16 +37,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/welcome/_questions.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" column="53" selection-start-line="41" selection-start-column="53" selection-end-line="41" selection-end-column="53" />
+            <state relative-caret-position="82">
+              <caret line="32" column="95" selection-start-line="32" selection-start-column="95" selection-end-line="32" selection-end-column="95" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/welcome/_plan.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
@@ -136,8 +134,8 @@
         <option value="$PROJECT_DIR$/app/views/guests/show.html.erb" />
         <option value="$PROJECT_DIR$/db/views/attendees_v01.sql" />
         <option value="$PROJECT_DIR$/db/schema.rb" />
-        <option value="$PROJECT_DIR$/app/views/welcome/_questions.html.erb" />
         <option value="$PROJECT_DIR$/app/views/welcome/_plan.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/welcome/_questions.html.erb" />
       </list>
     </option>
   </component>
@@ -152,42 +150,30 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="weddingwebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weddingwebsite" type="462c0819:PsiDirectoryNode" />
+              <item name="dirkenstefaniegaantrouwen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dirkenstefaniegaantrouwen" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="weddingwebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weddingwebsite" type="462c0819:PsiDirectoryNode" />
+              <item name="dirkenstefaniegaantrouwen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dirkenstefaniegaantrouwen" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="weddingwebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weddingwebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weddingwebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weddingwebsite" type="462c0819:PsiDirectoryNode" />
+              <item name="dirkenstefaniegaantrouwen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dirkenstefaniegaantrouwen" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="weddingwebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weddingwebsite" type="462c0819:PsiDirectoryNode" />
+              <item name="dirkenstefaniegaantrouwen" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dirkenstefaniegaantrouwen" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="welcome" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weddingwebsite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weddingwebsite" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -222,6 +208,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -380,17 +367,18 @@
       <workItem from="1639727948230" duration="8670000" />
       <workItem from="1639787626209" duration="10374000" />
       <workItem from="1650852793596" duration="1716000" />
+      <workItem from="1650879355819" duration="431000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89397000" />
+    <option name="totallyTimeSpent" value="89828000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="678" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="678" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49840257" visible="true" weight="0.34006462" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49840257" visible="true" weight="0.3457189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50159746" side_tool="true" weight="0.2819063" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -403,7 +391,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.44788274" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.44788274" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3279743" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -674,17 +662,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/welcome/_questions.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="53" selection-start-line="41" selection-start-column="53" selection-end-line="41" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/welcome/_plan.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="14" column="58" selection-start-line="14" selection-start-column="58" selection-end-line="14" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/welcome/_questions.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="32" column="95" selection-start-line="32" selection-start-column="95" selection-end-line="32" selection-end-column="95" />
         </state>
       </provider>
     </entry>
